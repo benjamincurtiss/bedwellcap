@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#8caec7">
+<title>Bedwell Capital</title>
+<style>
+* { box-sizing: border-box; }
+html,body { width:100%;height:100%;margin:0; }
+body { background:#8caec7; }
+.hero { position:relative; width:100%; min-height:100vh; min-height:100svh; background-image:url('hero.png'); background-size:cover; background-position:center; background-repeat:no-repeat; }
+/* Only the request-info area is interactive; the surrounding image is not a link. */
+.request-info { position:absolute; left:50%; top:55%; transform:translate(-50%,-50%); width:clamp(125px, 10vw, 170px); height:clamp(32px, 3.4vw, 46px); display:block; border-radius:2px; cursor:pointer; }
+.request-info:focus-visible { outline:3px solid white; outline-offset:3px; }
+@media(max-width:600px) { .hero { background-position:center; } .request-info { top:55%; } }
+</style>
+</head>
+<body>
+<main class="hero" aria-label="Bedwell Capital mountain landscape, logo, and request information">
+<a class="request-info" href="mailto:info@bedwellcap.com" aria-label="Request information by emailing info@bedwellcap.com" title="Request Info"></a>
+</main>
+</body>
+</html>
